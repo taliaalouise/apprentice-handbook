@@ -104,7 +104,17 @@ There's more to complexity analysis than we will describe here, refer to the
   Problems that take four times as long when the size of the problem doubles
   are said to have quadratic complexity.
 
-> Most examples are taken from [wikipedia](https://goo.gl/C07tL8)
+These are some common Big-O types ([Source](https://github.com/thejameskyle/itsy-bitsy-data-structures/blob/master/itsy-bitsy-data-structures.js)):
+
+|Name | Notation | How you feel when they show up to your party       
+|-----------|----------|----------|
+|Constant  | `O(1) ` | AWESOME!!
+|Logarithmic  | `O(log N)` | GREAT!
+|Linear  | `O(N)` | OKAY.
+|Linearithmic | `O(N log N) ` | UGH...
+|Polynomial  | `O(N ^ 2)` | SHITTY
+|Exponential  | `O(2 ^ N)` | HORRIBLE
+|Factorial  | `O(N!)` | WTF
 
 Big-O Graph, from [Big O Cheatsheet](http://bigocheatsheet.com/):
 
@@ -114,3 +124,4 @@ Big-O Graph, from [Big O Cheatsheet](http://bigocheatsheet.com/):
 
 * [Big-O Cheatsheet](http://bigocheatsheet.com/)
 * [A Gentle Introduction to Algorithm Complexity Analysis](http://discrete.gr/complexity/)
+* [Itsy Bitsy Data Structures](https://github.com/thejameskyle/itsy-bitsy-data-structures/blob/master/itsy-bitsy-data-structures.js)
