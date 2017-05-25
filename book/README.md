@@ -19,6 +19,7 @@
   1. [Recursion](year-one/data-structures-and-algorithms/06-recursion.md)
   1. [Big-O Notation](year-one/data-structures-and-algorithms/07-big-o-notation.md)
   1. [Dynamic Programming](year-one/data-structures-and-algorithms/08-dynamic-programming.md)
+  1. [File Input](year-one/data-structures-and-algorithms/09-file-input.md)
 
 ### Programming in Java
   1. [Basic terminology (or jargon)](year-one/programming-in-java/01-basic-terminology.md)
