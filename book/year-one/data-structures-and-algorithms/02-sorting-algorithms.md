@@ -23,7 +23,7 @@ there for future reference only.
 
 ## Bubble Sort
 
-### Complexity: `Time: O(n^2), Space: O(1)`
+### Complexity: `Time: O(n²), Space: O(1)`
 
 Compares an element to its neighbor, if the element is larger that its
 neighbor, they swap places. The largest elements “bubble up” to the end with
@@ -37,7 +37,7 @@ Bubble Sort in action:
 
 ## Selection Sort
 
-### Complexity: `Time: O(n^2), Space: O(n)`
+### Complexity: `Time: O(n²), Space: O(n)`
 
 Compares an element against all the elements of the array until it finds the
 smallest, then they swap places. Small elements get pushed to the beginning
@@ -51,7 +51,7 @@ Selection Sort in action:
 
 ## Insertion Sort
 
-### Complexity: `Time: O(n^2), Space: O(n)`
+### Complexity: `Time: O(n²), Space: O(n)`
 
 [Code sample](../programming-in-java/07-sample-code.md#selection-sort).
 

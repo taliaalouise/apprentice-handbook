@@ -97,7 +97,7 @@ There's more to complexity analysis than we will describe here, refer to the
   linear complexity. Mowing an area that is double the size of the original
   takes twice as long.
 
-* `O(n^2)`: **Quadratic** - Suppose you want to know which of your friends know
+* `O(n²)`: **Quadratic** - Suppose you want to know which of your friends know
   each other. You have to ask each pair of friends whether they
   know each other. If you have twice as many friends as someone else, you have
   to ask four times as many questions to figure out who everyone knows.
