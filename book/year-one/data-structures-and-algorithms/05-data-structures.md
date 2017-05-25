@@ -6,8 +6,8 @@
 * [2D Arrays](#2d-arrays-grid-like)
 * [Stacks](#stacks)
 * [Queues](#queues)
-* [Trees](#trees)
 * [Graphs](#graphs)
+* [Trees](#trees)
 
 
 ## Arrays
@@ -122,12 +122,27 @@ Add *x* to the back of the queue.
 `dequeue()`
 Remove the item at the front of the queue. This takes no parameter, it can only access the front item.
 
+## Graphs
+
+Non-linear, non-heirarchical data structure. A little like a web or a social network.
+
+Graphs are made up of nodes and edges. Nodes represent "things" in the graph and edges represent the relationships between them.
+
+**Node** - An element in the graph, e.g. a user on a social network, or a city on a map.
+
+**Edge** - (Sometimes called an **arc**) A relationship between two elements, e.g. a friendship between two people on a social network, or a road between two cities.
+
+**Directed Edge** - An edge which represents a one-way relationship, e.g. following someone on Twitter doesn't necessarily mean they follow you back.
+
+**Undirected Edge** - An edge representing a two-way relationship, e.g. if two people are friends on facebook.
+
+**Cycle** - This is where you can travel from a node back to itself without going along any edge more than once, e.g. travelling from London to York to Lancaster to Birmingham to London again.
 
 ## Trees
 
-Non-linear, hierarchical data structure. Like a family tree.
+Non-linear, hierarchical data structure. Like a family tree or organisational diagram.
 
-Tree begin at a root node, which has child nodes -> child nodes are roots of their own subtrees. Example: the computer’s directory system is a tree.
+Trees begin at a single root node, which has child nodes -> child nodes are roots of their own subtrees. Example: the computer’s directory system is a tree. Additionally, trees are non-cyclical - they cannot contain any cycles (see graph definition above).
 
 **Internal node** - child with at least one child
 
@@ -150,7 +165,7 @@ A binary tree has a special condition that each node can have a maximum of two c
 
 #### Binary Search Trees
 
-...
+A Binary Search Tree is a binary tree in which for every node, all the nodes in its left subtree have lower values than it, and all the nodes in its right subtree have higher values.
 
 ### Traversing
 
@@ -158,6 +173,5 @@ A binary tree has a special condition that each node can have a maximum of two c
 * Pre-order
 * Post-order
 
-## Graphs
 
 ...
