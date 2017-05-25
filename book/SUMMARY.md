@@ -1,9 +1,10 @@
 # Summary
 
+* [Start here](README.md)
+
 ## Year One
 
-* [Introduction](README.md)
-* [Data Structures and Algorithms](data-structures-and-algorithms.md)
+* Data Structures and Algorithms
   * [Basic ideas / skills](year-one/data-structures-and-algorithms/01-basic-ideas.md)
   * [Sorting algorithms](year-one/data-structures-and-algorithms/02-sorting-algorithms.md)
   * [Bonus sorting algorithms](year-one/data-structures-and-algorithms/03-bonus-algorithms.md)
@@ -22,4 +23,3 @@
 * SDLC
 
 ## Year Two
-
