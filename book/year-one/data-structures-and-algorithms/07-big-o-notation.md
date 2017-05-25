@@ -12,4 +12,4 @@ It is written in the form `O(maths)`, with the maths describing how the number o
 
 Big O Graph, from [Big O Cheatsheet](http://bigocheatsheet.com/):
 
-![Big O Notation Graph]("assets/bigo_graph.png")
+![Big O Notation Graph](https://github.com/ada-students/apprentice-handbook/blob/master/book/assets/bigo_graph.png?raw=true)
