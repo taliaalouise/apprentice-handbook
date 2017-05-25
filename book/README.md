@@ -1,7 +1,7 @@
 # Ada College Apprenticeship GitBook
 
 <img  
-  src="https://github.com/rcsole/apprenticeship/raw/master/book/assets/ada.png"
+  src="https://github.com/ada-students/apprentice-handbook/raw/master/book/assets/ada.png"
   height="300"
   width="300"
   alt="ada college logo"
