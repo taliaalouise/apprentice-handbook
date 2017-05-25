@@ -24,10 +24,11 @@
 ### Programming in Java
   1. [Basic terminology (or jargon)](year-one/programming-in-java/01-basic-terminology.md)
   1. [Data Types](year-one/programming-in-java/02-data-types.md)
-  1. [Looping and iteration](year-one/programming-in-java/03-looping-and-iteration.md)
-  1. [I/O (Input - Output)](year-one/programming-in-java/04-io-input-and-output.md)
-  1. [Drawing & Graphics](year-one/programming-in-java/05-drawing-and-graphics.md)
-  1. [Samples of code you should know how to write](year-one/programming-in-java/06-sample-code.md)
+  1. [Conditionals](year-one/programming-in-java/03-conditionals.md)
+  1. [Looping and iteration](year-one/programming-in-java/04-looping-and-iteration.md)
+  1. [I/O (Input - Output)](year-one/programming-in-java/05-io-input-and-output.md)
+  1. [Drawing & Graphics](year-one/programming-in-java/06-drawing-and-graphics.md)
+  1. [Samples of code you should know how to write](year-one/programming-in-java/07-sample-code.md)
 
 ### SDLC
 
