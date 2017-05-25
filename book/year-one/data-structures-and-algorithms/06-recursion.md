@@ -19,7 +19,7 @@ Example in Java:
 ```java
 // Handshake problem in code
 
-int handshakes(int n) {
+public static int handshakes(int n) {
    if (n = 2) {
       return 1;
    } else {
