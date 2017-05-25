@@ -33,7 +33,7 @@ Bubble Sort in action:
 
 ![gif explaining bubble sort](https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif?1495630103933)
 
-[Code sample](../programming-in-java/07-sample-code#bubble-sort).
+[Code sample](../programming-in-java/07-sample-code.md#bubble-sort).
 
 ## Selection Sort
 
@@ -47,13 +47,13 @@ Selection Sort in action:
 
 ![gif explaining selection sort](http://www.codingconnect.net/wp-content/uploads/2016/09/Selection-Sort.gif)
 
-[Code sample](../programming-in-java/07-sample-code#selection-sort).
+[Code sample](../programming-in-java/07-sample-code.md#selection-sort).
 
 ## Insertion Sort
 
 ### Complexity: `Time: O(n^2), Space: O(n)`
 
-[Code sample](../programming-in-java/07-sample-code#selection-sort).
+[Code sample](../programming-in-java/07-sample-code.md#selection-sort).
 
 Insertion Sort in action:
 
