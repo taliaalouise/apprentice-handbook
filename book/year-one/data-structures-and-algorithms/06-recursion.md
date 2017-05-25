@@ -16,7 +16,7 @@ Recursion works very similarly to loops in programming.
 
 Example in Java:
 
-```
+```java
 // Handshake problem in code
 
 int handshakes(int n) {
@@ -33,7 +33,7 @@ int handshakes(int n) {
 
 Example in Java:
 
-```
+```java
 // Calculate a factorial in code
 
 public static int factorial(int n) {
@@ -55,7 +55,7 @@ System.out.print(result);
 
 Example in Java:
 
-```
+```java
 // Calculate the fibonacci number at a given position
 
 public static int fibonacci(int n) {
