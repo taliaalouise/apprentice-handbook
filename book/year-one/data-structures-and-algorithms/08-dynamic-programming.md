@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Dynamic programming is a simple method of finding optimal or most efficient solutions to complex problems. It does this by deriving final optimal solution from optimal solutions to ever simpler versions of the problem.
+Dynamic programming is a simple method of finding optimal (best) solutions to complex problems. It does this by deriving the optimal solution from optimal solutions to simpler versions of the same problem.
 
 ### Typical problems
 
@@ -25,13 +25,20 @@ A travelling salesman has to visit several cities, then return home. It doesn't 
 
 #### Knapsack
 
->TODO : Continue from here
+A traveller has a knapsack with limited (weight) capacity. She can take a variety of items each with a different weight and cash values. She must work out the highest cash value combination of items she can fit in her knapsack.
+[a version of the knapscap problem](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Knapsack.svg/486px-Knapsack.svg.png)
+>[Knapsack problem - Wikipedia](https://en.wikipedia.org/wiki/Knapsack_problem#/media/File:Knapsack.svg) licensed under CC BY-SA 2.5
 
-Steps
-Divide problem into stages
-Make a decision at each stage
-Decision leads to optimal state at each stage
-Often starts at the last stage and work backwards
+### Brute force solutions
+
+We could attempt to solve this problems using *brute force*. This involves finding every possible solution and comparing them all, to find the best. For simple versions of the problem (like a Knapsack problem with only a few items) this is not so bad. But as the options grow the number of solutions quickly become too large to compute efficiently. For instance, there are over 3 million possible routes to a travelling salesman problem with 10 cities and nearly 500 million for 12 cities.
+
+We need a better approach for complex problems.
+
+###
+
+
 
 ## External references
 - [Travelling salesman](https://simple.wikipedia.org/wiki/Travelling_salesman_problem)
+- [Knapsack problem](https://en.wikipedia.org/wiki/Knapsack_problem)
