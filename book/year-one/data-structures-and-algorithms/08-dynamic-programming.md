@@ -26,7 +26,7 @@ A travelling salesman has to visit several cities, then return home. It doesn't 
 #### Knapsack
 
 A traveller has a knapsack with limited (weight) capacity. She can take a variety of items each with a different weight and cash values. She must work out the highest cash value combination of items she can fit in her knapsack.
-[a version of the knapscap problem](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Knapsack.svg/486px-Knapsack.svg.png)
+![a version of the knapscap problem](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Knapsack.svg/486px-Knapsack.svg.png)
 >[Knapsack problem - Wikipedia](https://en.wikipedia.org/wiki/Knapsack_problem#/media/File:Knapsack.svg) licensed under CC BY-SA 2.5
 
 ### Brute force solutions
@@ -35,7 +35,26 @@ We could attempt to solve this problems using *brute force*. This involves findi
 
 We need a better approach for complex problems.
 
-###
+### The Dynamic approach
+
+The general idea of Dyanmic program is to find the simplest version of the problem and then work your way up to the more complex version you actually want to solve. Take the knapsack problem. The simplest version of any knapsack problem is a situation where only one of the items is available abd you have a bag with only 1kg capacity. We can then slowly add more weight capacity to our bag and make more items available until we scale up to the actual problem we want to solve.
+
+
+ Item number      |1            | 2          |3            |4           |5
+------------------|-------------|------------|-------------|------------|-----------
+Weight (kg)       |3            |2           |1            |4           |5 
+Value (£)         |25           |20          |15           |40          |50
+
+
+
+                     |0kg bag      |1kg bag     |2kg bag     |3kg bag       |4kg bag   |5kg bag    |6kg bag
+---------------------|-------------|------------|-------------|-------------|----------|-----------|-----------
+No items available   |0            |0           |0            |0            |0         |0          |0
+Item 1 only          |0            |            |             |             |          |           |
+Item 1 & 2 only      |0            |            |             |             |          |           |
+Item 1, 2 & 3 only   |0            |            |             |             |          |           |
+Item 1, 2, 3 & 4 only|0            |            |             |             |          |           |
+All items 1 - 5      |0            |            |             |             |          |           |
 
 
 
