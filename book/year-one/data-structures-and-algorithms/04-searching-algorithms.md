@@ -8,7 +8,7 @@
 
 ## Introduction
 
-> TODO: Write introduction.
+Searching algorithms are used to determine whether or not a certain value is in an array, and where that value is. There are only two commonly used searching algorithms used on arrays, Linear and Binary search.
 
 ## Linear Search
 
