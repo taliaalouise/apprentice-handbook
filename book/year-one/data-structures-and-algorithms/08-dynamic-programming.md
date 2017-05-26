@@ -3,43 +3,43 @@
 ## Table of Contents
 
 * [Introduction](#introduction)
-* [Dynamic vs Brute force](#terminology)
-* [The funny table thing](#terminology)
-* [Recursion and dynamic programming](#terminology)
+* [Typical problems](#typical-problems)
+* [Brute force](#brute-force)
+* [The dynamic approach](#the-dynamic-approach)
 * [External references](#external-references)
 
 ## Introduction
 
 Dynamic programming is a simple method of finding optimal (best) solutions to complex problems. It does this by deriving the optimal solution from solutions to simpler versions of the same problem.
 
-### Typical problems
+## Typical problems
 
 Dynamic programming can be applied to these *classic* programming problems.
 
-#### Travelling salesman
+### Travelling salesman
 
 A travelling salesman has to visit several cities, then return home. It doesn't matter what order she visits the cities in, she just wants to find the shortest possible journey that includes all cities.
 
 ![gif visualisation of traveling salesman problem](https://upload.wikimedia.org/wikipedia/commons/2/23/Nearestneighbor.gif)
 > [Nearest Neighbour algorithm for a TSP with 7 cities - Wikipedia](https://en.wikipedia.org/wiki/Travelling_salesman_problem#/media/File:Nearestneighbor.gif) licensed under CC BY-SA 3.0
 
-#### Knapsack
+### Knapsack
 
 A traveller has a knapsack with limited (weight) capacity. She can take a variety of items each with a different weight and cash values. She must work out the highest cash value combination of items she can fit in her knapsack.
 ![a version of the knapscap problem](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Knapsack.svg/486px-Knapsack.svg.png)
 >[Knapsack problem - Wikipedia](https://en.wikipedia.org/wiki/Knapsack_problem#/media/File:Knapsack.svg) licensed under CC BY-SA 2.5
 
-### Brute force solutions
+## Brute force
 
 We could attempt to solve these problems using *brute force*. This involves finding every possible solution and comparing them all, to find the best. For simple versions of the problem (like a Knapsack problem with only a few items) this is not so bad. But as the options grow the number of solutions quickly become too large to compute efficiently. For instance, there are over 3 million possible routes to a travelling salesman problem with 10 cities and nearly 500 million for 12 cities.
 
 We need a better approach for complex problems.
 
-### The Dynamic approach
+## The Dynamic approach
 
 The general idea of Dyanmic program is to find a solution the simplest version of the problem and then work your way up to the more complex version you actually want to solve. Take the knapsack problem. The simplest version of any knapsack problem is a situation where only one of the items is available and you have a bag with only 1kg capacity. We can then slowly add more weight capacity to our bag and make more items available until we scale up to the actual problem we want to solve.
 
-#### Example knapsack problem
+### Example knapsack problem
 
 In this knapsack problem we have a bag with **6kg capacity** and the following items:
 
@@ -48,7 +48,7 @@ Item number       |1            | 2          |3            |4           |5
 Weight (kg)       |3            |2           |1            |4           |5 
 Value (£)         |25           |20          |15           |40          |50
 
-#### Solving this knapsack problem a dynamic table
+### Solving this knapsack problem a dynamic table
 
 We can record the process of scaling up from simple to complex using the table below. 
 
@@ -75,11 +75,9 @@ In the last cell of the table we have the problem we actually want to solve - a 
 5. *Item 3* uses up all our remaining capacity (1kg) so we can't add any more items.
 6. We now the best solution is *Item 5* and *Item 3*: £50 + £15 = £65.
 
-#### Tips to making this process quicker.
+### Copy down from the row above to save time
 
 Filling in the table will always find the optimal (best) solution. But it can be labourious. There are some shortcuts we can take.
-
-##### 1. Copy down from the row above
 
 As we move down the rows, we add one new item each time. When adding a new item, we can copy the values from the row above until we reach the **first column that is equal weight to the new item**. 
 
@@ -92,7 +90,10 @@ Item 1, 2, 3 & 4 only|0 [COPY]     |15 [COPY]   |20 [COPY]    |35 [COPY]    |...
 
 This makes sense if we consider the fact that a 4kg item can only come into consideration when we have a bag with a capcity of at leasgt 4kg. Up to that point our optimal solution cannot change form the row above.
 
-##### 2. Work out the optimal solution for each cell recursively
+## Recursive approach - the real power of dynamic programming
+
+As we move through the table and work out the best solution for each case we are sort of doing *brute force* in our head (imagine how you would work out the best solution in a table with 100s of rows and columns!!). We need a simple way to find the value for any cell, based on previous cells. This would really speed up the process of completing the table and find the best approach.
+
 
 ## External references
 - [Travelling salesman](https://simple.wikipedia.org/wiki/Travelling_salesman_problem)
