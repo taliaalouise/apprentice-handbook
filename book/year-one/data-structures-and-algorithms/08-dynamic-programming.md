@@ -41,6 +41,7 @@ The general idea of Dyanmic program is to find the simplest version of the probl
 
 
 Item number       |1            | 2          |3            |4           |5
+------------------|-------------|------------|-------------|------------|-----------
 Weight (kg)       |3            |2           |1            |4           |5 
 Value (£)         |25           |20          |15           |40          |50
 
