@@ -1,8 +1,23 @@
 # Data Types in Java
 
+## Table of Contents
+* [Introduction](#introduction)
+* [Numbers](#numbers)
+* [Operands](#operands)
+* [Booleans](#booleans)
+* [Characters](#characters)
+* [Strings](#strings)
+* [Arrays](#arrays)
+* [External Resources](#external-resources)
+
+## Introduction
+In computer science, data is grouped according to type. This chapter covers the naming conventions used for data types in Java.
+
+Java is a statically typed programming language, meaning that what *kind* of data it is is as important as the data itself. In Java, when creating an `array`, declaring a `variable`, or making a `function`, you *must* declare the **type** before its name.
+
 ## Numbers
 
-### Integers
+### Integer
 
 Integers in computer science refer to whole numbers.
 
@@ -98,3 +113,6 @@ String talk = "blah blah blah";
 ## Arrays
 
 ## 2D Arrays
+
+## External Resources
+* [Java's Primitive Data Types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
