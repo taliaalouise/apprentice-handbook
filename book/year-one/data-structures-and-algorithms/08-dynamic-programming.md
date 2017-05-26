@@ -40,21 +40,20 @@ We need a better approach for complex problems.
 The general idea of Dyanmic program is to find the simplest version of the problem and then work your way up to the more complex version you actually want to solve. Take the knapsack problem. The simplest version of any knapsack problem is a situation where only one of the items is available abd you have a bag with only 1kg capacity. We can then slowly add more weight capacity to our bag and make more items available until we scale up to the actual problem we want to solve.
 
 
- Item number      |1            | 2          |3            |4           |5
-------------------|-------------|------------|-------------|------------|-----------
+Item number       |1            | 2          |3            |4           |5
 Weight (kg)       |3            |2           |1            |4           |5 
 Value (£)         |25           |20          |15           |40          |50
 
 
 
-                     |0kg bag      |1kg bag     |2kg bag     |3kg bag       |4kg bag   |5kg bag    |6kg bag
+Dynamic table        |0kg bag      |1kg bag     |2kg bag      3kg bag       |4kg bag   |5kg bag    |6kg bag
 ---------------------|-------------|------------|-------------|-------------|----------|-----------|-----------
 No items available   |0            |0           |0            |0            |0         |0          |0
-Item 1 only          |0            |            |             |             |          |           |
-Item 1 & 2 only      |0            |            |             |             |          |           |
-Item 1, 2 & 3 only   |0            |            |             |             |          |           |
-Item 1, 2, 3 & 4 only|0            |            |             |             |          |           |
-All items 1 - 5      |0            |            |             |             |          |           |
+Item 1 only          |0            |0           |0            |25           |25        |25         |25
+Item 1 & 2 only      |0            |0           |20           |25           |25        |45         |45
+Item 1, 2 & 3 only   |0            |15          |20           |35           |40        |45         |60
+Item 1, 2, 3 & 4 only|0            |15          |20           |35           |40        |55         |60
+All items 1 - 5      |0            |15          |20           |35           |40        |55         |65
 
 
 
