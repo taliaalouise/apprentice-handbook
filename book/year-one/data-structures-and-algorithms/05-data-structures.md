@@ -8,19 +8,22 @@
 * [Queues](#queues)
 * [Graphs](#graphs)
 * [Trees](#trees)
+* [Binary Trees](#binary-trees)
+* [Binary Search Trees](#binary-search-trees)
+* [External Resources](#external-resources)
 
 
 ## Arrays
 
-An array is a list of elements all of the same data type (e.g. all integers or all strings, not a mixture). 
+An array is a list of elements all of the same data type (e.g. all integers or all strings, not a mixture).
 
-Each item in the list has an index, which describes its location in the list. The indexes begin at 0. 
+Each item in the list has an index, which describes its location in the list. The indexes begin at 0.
 
 For example, this shopping list is an array containing strings:
 
 **Index**  | 0        | 1        | 2        | 3        | 4        
 -----------|----------|----------|----------|----------|----------
-**Value**  | "Apples" | "Bread"  | "Milk"   | "Corn"   | "Butter" 
+**Value**  | "Apples" | "Bread"  | "Milk"   | "Corn"   | "Butter"
 
 ### Finding items by index
 
@@ -32,7 +35,7 @@ For example, you can find the first item with the expression `arrayName[0]` (rem
 
 #### Arrays in Java are static
 
-Arrays in java are static. This means they are of fixed length. The length is specified when you initialise the array. 
+Arrays in java are static. This means they are of fixed length. The length is specified when you initialise the array.
 
 This does not mean the array needs to be 'full' (i.e. have an item stored at each index). However, an array can never exceed its initial length and any attempt to add items beyond this maximum will cause an error.
 
@@ -61,15 +64,15 @@ int columns = 4;
 double[][] scores = new double[rows][columns]; // Defines a 3x4 table or grid
 ```
 
-You can access an item in a 2D array using the row and column index, ```arrayName[rowNum][colNum]``` e.g. ```arrayName[0][0]``` is the first item in the first array (in the top left of the grid). 
+You can access an item in a 2D array using the row and column index, ```arrayName[rowNum][colNum]``` e.g. ```arrayName[0][0]``` is the first item in the first array (in the top left of the grid).
 
 For the java code above, we could access the value in each cell as follows:
 
 **Indexes**  | 0             | 1            | 2             | 3             
 :-----------:|---------------|--------------|---------------|--------------
-**0**        | scores[0]\[0] |scores[0]\[1] | scores[0]\[2] | scores[0]\[3] 
-**1**        | scores[1]\[0] |scores[1]\[1] | scores[1]\[2] | scores[1]\[3] 
-**2**        | scores[2]\[0] |scores[2]\[1] | scores[2]\[2] | scores[1]\[3] 
+**0**        | scores[0]\[0] |scores[0]\[1] | scores[0]\[2] | scores[0]\[3]
+**1**        | scores[1]\[0] |scores[1]\[1] | scores[1]\[2] | scores[1]\[3]
+**2**        | scores[2]\[0] |scores[2]\[1] | scores[2]\[2] | scores[1]\[3]
 
 ## Stacks
 
@@ -124,7 +127,7 @@ Remove the item at the front of the queue. This takes no parameter, it can only 
 
 ## Graphs
 
-Non-linear, non-heirarchical data structure. A little like a web or a social network.
+Graphs are a non-linear, *non-hierarchical* data structure. A little like a web or a social network.
 
 Graphs are made up of nodes and edges. Nodes represent "things" in the graph and edges represent the relationships between them.
 
@@ -136,13 +139,23 @@ Graphs are made up of nodes and edges. Nodes represent "things" in the graph and
 
 **Undirected Edge** - An edge representing a two-way relationship, e.g. if two people are friends on facebook.
 
-**Cycle** - This is where you can travel from a node back to itself without going along any edge more than once, e.g. travelling from London to York to Lancaster to Birmingham to London again.
+**Cycle** - This is where you can travel from a node back to itself without going along any edge more than once, e.g. traveling from London to York to Lancaster to Birmingham to London again.
 
 ## Trees
 
-Non-linear, hierarchical data structure. Like a family tree or organisational diagram.
+Trees are a non-linear, *hierarchical* data structure. They have a similar appearance to a family tree or organizational diagram.
 
 Trees begin at a single root node, which has child nodes -> child nodes are roots of their own subtrees. Example: the computer’s directory system is a tree. Additionally, trees are non-cyclical - they cannot contain any cycles (see graph definition above).
+
+**Advantages of Trees**
+
+Trees are so useful and frequently used, because they have some very serious advantages:
+* Trees reflect structural relationships in the data
+* Trees are used to represent hierarchies
+* Trees provide an efficient insertion and searching
+* Trees are very flexible data, allowing to move subtrees around with minimum effort
+
+Common terminology:
 
 **Internal node** - child with at least one child
 
@@ -154,24 +167,59 @@ Trees begin at a single root node, which has child nodes -> child nodes are root
 
 **Height** - maximum depth of any node
 
-**Traversal**:
-* **Pre order** - process when you pass down left side of node
-* **In order** - process when you pass underneath node
-* **Post order** - process when you pass up right side of node
+**Traversal** - A traversal is a process that visits all the nodes in the tree. Since a tree is a nonlinear data structure, there is no one way to traverse them.
+
+**Types of Traversal**:
+* **Pre-order** - visit the parent first and then left and right children
+* **In-order** - visit the left child, then the parent and the right child
+* **Post-order** - visit left child, then the right child and then the parent
+
+
+As an example consider the following tree and its four traversals:
+
+![Tree graphic](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/pix/tree1.bmp)
+
+`Pre-order`: 8, 5, 9, 7, 1, 12, 2, 4, 11, 3
+
+`In-order`:  5, 1, 7, 2, 12, 8, 4, 3, 11
+
+`Post-order`: 9, 1, 2, 12, 7, 5, 3, 11, 4, 8
+
+`Level-order`: 8, 5, 4, 9, 7, 11, 1, 12, 3, 2
+
+Consider the flow of the different types of traversal on the following tree:
+
+![Tree with traversals](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/pix/traversalEuler.bmp)
 
 ### Binary Trees
 
-A binary tree has a special condition that each node can have a maximum of two children. A binary tree has the benefits of both an ordered array and a linked list as search is as quick as in a sorted array and insertion or deletion operation are as fast as in linked list.
+A binary tree has a special condition that each node can have a maximum of two children. A binary tree has the benefits of both an ordered array and a linked list as search is as quick as in a sorted array and insertion or deletion operations are as fast as in linked list.
+
+Example of a binary tree (from [Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/300px-Binary_tree.svg.png)):
+
+![Binary Tree](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Binary_tree.svg/300px-Binary_tree.svg.png)
+
+A **complete** binary tree is very special tree, it provides the best possible ratio between the number of nodes and the height.
+
+**Full** versus **Complete** binary tree:
+
+![Full and complete binary trees](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/pix/full_complete.bmp)
 
 #### Binary Search Trees
 
 A Binary Search Tree is a binary tree in which for every node, all the nodes in its left subtree have lower values than it, and all the nodes in its right subtree have higher values.
 
-### Traversing
+The basic idea behind this data structure is to have a storing repository that provides an efficient way of data sorting, searching and retrieving.
 
-* In-order
-* Pre-order
-* Post-order
+A Binary Search Tree (BST) is a binary tree where nodes are ordered in the following way:
+* each node contains one key (also known as data)
+* the keys in the *left subtree* are **smaller** then the key in its parent node
+* the keys in the *right subtree* are **greater** the key in its parent node
+* duplicate keys are not allowed
 
+In the following tree, all nodes in the left subtree of 10 have keys < 10 while all nodes in the right subtree have keys > 10. Because both the left and right subtrees of a BST are also binary search trees, the above definition applies to all internal nodes:
 
-...
+![Binary Search Tree Graphic](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/pix/pix03.bmp)
+
+## External Resources
+* [Lecture Notes on Trees from CMU](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Trees/trees.html)
