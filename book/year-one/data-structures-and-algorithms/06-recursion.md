@@ -2,11 +2,34 @@
 
 ## What is recursion?
 
-A function that calls itself.
+A function that calls itself. 
+
+### Base case
+
+Recursive functions usually have a base case. This is the point at which the function stops calling itself, and starts returning some value. Without a base case a recursive function might run forever in an infinite loop.
+
+If you imagine a recursive function for opening Russian (Matryoshka) dolls. We want to open the dolls until we reach the smallest doll. The smallest doll would be the *base case*.
+
+```
+// Pseudocode
+public openDolls(doll) {
+   if (doll == smallest) {
+      return doll; // This is the base case. We can't find a smaller doll
+   } else {
+      smallerDoll = doll - 1;
+      return openDolls(smallerDoll); // Here the function calls itself. The recursive part.
+   }
+}
+```
+![Russian matryoshka dolls](https://upload.wikimedia.org/wikipedia/commons/3/3d/First_matryoshka_museum_doll_open.jpg)
+>[The original matryoshka set by Zvyozdochkin and Malyutin, 1892](https://en.wikipedia.org/wiki/Matryoshka_doll#/media/File:First_matryoshka_museum_doll_open.jpg) - public domain
+
 
 ## Why use recursion?
 
-Recursion works very similarly to loops in programming.
+Recursion works very similarly to loops in programming. In fact, we can write any recursive function with a loop, or vice versa. 
+
+Recursion is sometimes preferred because it usually requires less code and is therefore considered more *elegant*. Iteration (loops) is sometimes preferred as it usually uses less memory and therefore favours *performance*.
 
 ## Examples and applications
 
