@@ -14,10 +14,10 @@ If you imagine a recursive function for opening Russian (Matryoshka) dolls. We w
 // Pseudocode
 public openDolls(doll) {
    if (doll == smallest) {
-      return doll; // This is the base case. We can't find a smaller doll
+      return doll;      // This is the base case. We can't find a smaller doll
    } else {
       smallerDoll = doll - 1;
-      return openDolls(smallerDoll); // Here the function calls itself. The recursive part.
+      return openDolls(smallerDoll);      // Here the function calls itself. The recursive part.
    }
 }
 ```
