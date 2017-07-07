@@ -1,8 +1,12 @@
-# Chapter 02
+# Security
 
 ## Table of Contents
 
-* [Chapter heading](#chapter-heading)
+* [Introduction](#Introduction)
+* [Security risks](#security-risks)
+* [Password hashing](#password-hashing)
+* [Encryption](#Encryption)
+* [SQL Injection](#sql-injection)
 * [Resources](#resources)
 
 ## Introduction
@@ -50,15 +54,13 @@ Encryption is a security method in which information is encoded in such a way th
 
 If you take a user input (e.g. through a form on a web page) and insert it into a SQL database, there is a chance that you have left yourself wide open for a security issue known as the SQL Injection.
 
-Injection usually occurs when you ask a user for input, like their name and instead of a name they give you a SQL statement that you will unknowingly run on your database. Never trust user provided data, process this data only after validation; as a rule, this is done by Pattern Matching.
+Injection usually occurs when you ask a user for input, like their name, and instead of a name they give you a SQL statement that you will unknowingly run on your database. Never trust user provided data, process this data only after validation; as a rule, this is done by Pattern Matching (finding potential dangerous characters and removing them from the data).
 
-![Little Bobby Drop Tables]( https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
-
-https://www.tutorialspoint.com/sql/sql-injection.htm
-
+![Little Bobby Tables](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
+> ["Exploits of a mum"](https://xkcd.com/327/) by xkcd is licensed under CC BY-NC 2.5
 
 ## Resources:
-https://www.wired.com/2016/06/hacker-lexicon-password-hashing/
-https://www.tutorialspoint.com/internet_technologies/data_encryption.htm
 
-* [Link text](http://www.example.co.uk/)
+* [Hacker Lexicon: What is password hasing? - Wired](https://www.wired.com/2016/06/hacker-lexicon-password-hashing/)
+* [Data encryptoin - Tutorials Point](https://www.tutorialspoint.com/internet_technologies/data_encryption.htm)
+* [SQL Injection - Tutorials Point](https://www.tutorialspoint.com/sql/sql-injection.htm)
