@@ -42,9 +42,9 @@ A hash, like other forms of encryption, turns readable data into a scrambled cip
 
 For example, the string `"password"` would be hashed to `"5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8"` using the SHA-1 algorithm. **WARNING:** [SHA-1 is no longer considered secure](https://en.wikipedia.org/wiki/SHA-1).
 
-If someone hacks into a database,they only can access the hashed password data. This does not allow them to access the account as there is no way of getting from the hashed data back to the password.
+If someone hacks into a database, they only can access the hashed password data. This does not allow them to access the account as there is no way of getting from the hashed data back to the password.
 
-Hackers do, however, look for hashes of common passwords (they might search the database for the hash of "password" shown above) as this will allow them identify a password and access a user account. Hence, it is very important to use complex passwords.
+However, hackers do look for hashes of common passwords (they might search the database for the hash of "password" shown above) as this will allow them identify a password and access a user account. Hence, it is very important to use complex passwords; hackers are unlikely to search for these hashes.
 
 ## Encryption
 
