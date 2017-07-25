@@ -1,4 +1,4 @@
-# Chapter 02
+# Funcational dependencies and Normalization
 
 ## Table of Contents
 
