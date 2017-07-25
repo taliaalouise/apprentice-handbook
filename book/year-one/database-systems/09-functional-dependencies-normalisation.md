@@ -1,4 +1,4 @@
-# Funcational dependencies and Normalization
+# Functional dependencies and Normalization
 
 ## Table of Contents
 
