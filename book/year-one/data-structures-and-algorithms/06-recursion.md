@@ -1,5 +1,13 @@
 # Recursion
 
+## Table of Contents
+
+* [What is recursion?](#what-is-recursion)
+   * [Base case](#base-case)
+* [Why use recursion?](#why-use-recursion)
+* [Examples and applications](#examples-and-applications)
+* [External Resources](#external-resources)
+
 ## What is recursion?
 
 A function that calls itself. 
@@ -95,3 +103,5 @@ int userNum = reader.nextInt();
 int result = fibonacci(userNum);
 System.out.print(result);
 ```
+## External Resources
+// TODO
