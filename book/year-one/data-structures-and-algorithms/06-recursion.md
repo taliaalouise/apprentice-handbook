@@ -60,11 +60,11 @@ Example in Java:
 // Calculate a factorial in code
 
 public static int factorial(int n) {
- if (n == 1) {
-   return 1;
- } else {
-   return n * factorial(n - 1);
- }
+   if (n == 1) {
+      return 1;
+   } else {
+      return n * factorial(n - 1);
+   }
 }
 
 Scanner reader = new Scanner(System.in);
@@ -82,16 +82,16 @@ Example in Java:
 // Calculate the fibonacci number at a given position
 
 public static int fibonacci(int n) {
- if (n <= 2) {
-   return n - 1;
- } else {
-   return fibonacci(n -  1) + fibonacci(n - 2);
- }
+   if (n <= 2) {
+      return n - 1;
+   } else {
+      return fibonacci(n -  1) + fibonacci(n - 2);
+   }
 }
 
- Scanner reader = new Scanner(System.in);
- System.out.println("Enter a number: ");
- int userNum = reader.nextInt();
- int result = fibonacci(userNum);
- System.out.print(result);
+Scanner reader = new Scanner(System.in);
+System.out.println("Enter a number: ");
+int userNum = reader.nextInt();
+int result = fibonacci(userNum);
+System.out.print(result);
 ```
