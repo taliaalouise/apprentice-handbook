@@ -28,7 +28,7 @@ This first phase is intended ensure it is a good idea to proceed with a project,
 * Can it be done within a certain timeframe?
 * What is the budget? Is it affordable?
 * Will there be demand for the product? How much revenue will it generate?
-* Is it Legal? Will the product break any laws (e.g. privacy / data protection)?
+* Is it legal? Will the product break any laws (e.g. privacy / data protection)?
 
 This phase is all about making prediction, which is a risky business. Therefore, answers to these questions will often come with assumptions and caveats (e.g. "We assume we can build this with X staff members, so it will cost £Y. If we need to hire 20% more staff it will cost £Z").
 
@@ -45,7 +45,7 @@ This phase should create a set of specifications by which the final product can 
 
 ***Analysing* requirements:**
 * Create clear, complete, and consistent requirements
-* Resolve conflict between requirements (the client wants the product in 3 months, but the team wants 6 months to build it)
+* Resolve conflict between requirements (e.g. the client wants the product in 3 months, but the team wants 6 months to build it)
 
 ***Record* requirements:**
 * Create a single summary or list of requirements
@@ -60,7 +60,7 @@ The design phases is not just about how the product will look (UI, branding, etc
 
 It involves designing:
 * System architecture - what is the Object Oriented / class structure of the system?
-* System logical - what algorithms / data structures will be used?
+* System logic - what algorithms / data structures will be used?
   * Abstract representation of data flows
   * Abstract model of the system
   * Includes entity relationship diagrams
@@ -98,15 +98,15 @@ A final public launch is often precursed by [alpha and beta releases](https://en
 
 There 3 main types of maintenance:
 1. Keeping the system running
-  * Creating backups
-  * Handling demand/ traffic spikes
-  * et
+   * Creating backups
+   * Handling demand/ traffic spikes
+   * etc...
 2. Fixing bugs:
-  * Analysing crash reports
-  * Fixing errors
+   * Analysing crash reports
+   * Fixing errors
 3. Making enhancement:
-  * Improving existing functionality
-  * Adding new features
+   * Improving existing functionality
+   * Adding new features
 
 Almost all systems will require all of these types of maintenance.
 
