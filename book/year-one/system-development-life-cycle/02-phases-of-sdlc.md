@@ -4,13 +4,13 @@
 
 * [Introduction](#introduction)
 * [The seven phases of SDLC](#the-seven-phases-of-sdlc)
-  * [1. Feasibility study](#1-feasibilty-study)
-  * [2.Requirement analysis](#2-equirement-analysis)
+  * [1. Feasibility study](#1-feasibility-study)
+  * [2.Requirement analysis](#2-requirement-analysis)
   * [3. Design](#3-design)
   * [4. Development](#4-development)
   * [5. Testing](#5-testing)
-  * [6. Implementation](6-implementation)
-  * [7. Maintenance](7-maintenance)
+  * [6. Implementation](#6-implementation)
+  * [7. Maintenance](#7-maintenance)
 * [Resources](#resources)
 
 ## Introduction
