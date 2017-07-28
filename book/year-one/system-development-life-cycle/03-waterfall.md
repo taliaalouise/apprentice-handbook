@@ -15,8 +15,8 @@ Waterfall is not iterative. Teams should not go back to a phase they have alread
 
 This is where the waterfall image comes from, it requires team flow through each phase without going back up.
 
-![Waterfall](https://static.pexels.com/photos/50588/kuang-si-falls-waterfall-water-laos-50588.jpg)
-> *Kuang Si falls - Pexel bay. Licensed under CC0*
+![Elakala Waterfall 1](https://upload.wikimedia.org/wikipedia/commons/f/f5/Elakala_waterfall_1_-_West_Virginia_-_ForestWander.jpg)
+>[Elakala Waterfall 1](https://commons.wikimedia.org/wiki/File:Elakala_waterfall_1_-_West_Virginia_-_ForestWander.jpg) - Licensed under CC BY-SA 3.0 US. Attribution: [http://www.ForestWander.com](http://www.ForestWander.com)
 
 The waterfall approach has its roots in the engineering and construction industries. It has proved to be an effective way of completing large physical infrastructure projects.
 
