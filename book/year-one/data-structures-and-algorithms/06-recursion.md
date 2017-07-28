@@ -32,12 +32,12 @@ public openDolls(doll) {
 ![Russian matryoshka dolls](https://upload.wikimedia.org/wikipedia/commons/3/3d/First_matryoshka_museum_doll_open.jpg)
 >[The original matryoshka set by Zvyozdochkin and Malyutin, 1892](https://en.wikipedia.org/wiki/Matryoshka_doll#/media/File:First_matryoshka_museum_doll_open.jpg) - public domain
 
-
 ## Why use recursion?
 
 Recursion works very similarly to loops in programming. In fact, we can write any recursive function with a loop, or vice versa. 
 
 Recursion is sometimes preferred because it usually requires less code and is therefore considered more *elegant*. Iteration (loops) is sometimes preferred as it usually uses less memory and therefore favours *performance*.
+
 
 ## Examples and applications
 

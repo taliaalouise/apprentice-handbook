@@ -1,0 +1,50 @@
+[
+  {
+    "name": "bug",
+    "color": "#F44336"
+  },
+  {
+    "name": "critical",
+    "color": "#B71C1C"
+  },
+  {
+    "name": "documentation",
+    "color": "#3F51B5"
+  },
+  {
+    "name": "enhancement",
+    "color": "#03A9F4"
+  },
+  {
+    "name": "help wanted",
+    "color": "#CDDC39"
+  },
+  {
+    "name": "in-progress",
+    "color": "#FFC107"
+  },
+  {
+    "name": "performance",
+    "color": "#795548"
+  },
+  {
+    "name": "refactor",
+    "color": "#607D8B"
+  },
+  {
+    "name": "starter",
+    "color": "#4CAF50"
+  },
+  {
+    "name": "support",
+    "color": "#9C27B0"
+  },
+  {
+    "name": "tests",
+    "color": "#009688"
+  },
+  {
+    "name": "wontfix",
+    "color": "#ffffff"
+  }
+]

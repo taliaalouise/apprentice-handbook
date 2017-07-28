@@ -16,10 +16,11 @@
 * Programming in Java
   * [Basic terminology \(or jargon\)](year-one/programming-in-java/01-basic-terminology.md)
   * [Data Types](year-one/programming-in-java/02-data-types.md)
-  * [Looping and iteration](year-one/programming-in-java/03-looping-and-iteration.md)
-  * [I/O \(Input - Output\)](year-one/programming-in-java/04-io-input-and-output.md)
-  * [Drawing & Graphics](year-one/programming-in-java/05-drawing-and-graphics.md)
-  * [Samples of code you should know how to write](year-one/programming-in-java/06-sample-code.md)
+  * [Conditionals](year-one/programming-in-java/03-conditionals.md)
+  * [Looping and iteration](year-one/programming-in-java/04-looping-and-iteration.md)
+  * [I/O \(Input - Output\)](year-one/programming-in-java/05-io-input-and-output.md)
+  * [Drawing & Graphics](year-one/programming-in-java/06-drawing-and-graphics.md)
+  * [Samples of code you should know how to write](year-one/programming-in-java/07-sample-code.md)
 * SDLC
 
 ## Year Two

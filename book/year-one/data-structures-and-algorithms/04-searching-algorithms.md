@@ -8,62 +8,17 @@
 
 ## Introduction
 
-> TODO: Write introduction.
+Searching algorithms are used to determine whether or not a certain value is in an array, and where that value is. There are only two commonly used searching algorithms used on arrays, Linear and Binary search.
 
 ## Linear Search
 
 Going one by one along a list of items until you find what you're looking for.
 
-Example in Java:
-
-```java
-int[] arr = {4, 3, 2, 1};
-
-public static boolean linearSearch(int n, int[] arr) {
-  for (int element : arr) {
-    if (n == element) {
-      return true;
-    }
-  }
-  return false;
-}
-```
+[Code sample](../programming-in-java/07-sample-code.md#linear-search).
 
 ## Binary Search
 
-Dividing sorted data into halves, discarding the unnecessary halves, until you find what you're looking for. Ex. Finding a name in a phone book.
+Dividing sorted data into halves, discarding the unnecessary halves, until you
+find what you're looking for. Ex. Finding a name in a phone book.
 
-Example in Java:
-
-```java
-int[] arr = {4, 3, 2, 1};
-
-public static boolean binarySearch(int n, int[] arr) {
-  int start = 0;
-  int end = arr.length - 1;
-  int middle;
-
-  while (true) {
-    middle = (start + end) / 2; // reset the middle index each time
-
-    if (n == arr[middle]) { // if n is the middle number
-      return true;
-    }
-
-    if (start == middle && middle == end) { // if n isn't in the array
-      return false;
-    }
-
-    if (n < arr[middle]) {
-      end = middle - 1;
-    }
-
-    if (n > arr[middle]) {
-      start = middle + 1;
-    }
-  }
-}
-```
-
-
-
+[Code sample](../programming-in-java/07-sample-code.md#binary-search).
