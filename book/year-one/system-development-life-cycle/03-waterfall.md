@@ -15,7 +15,7 @@ Waterfall is not iterative. Teams should not go back to a phase they have alread
 
 This is where the waterfall image comes from, it requires team flow through each phase without going back up.
 
-![Waterfall](https://static.pexels.com/photos/50588/kuang-si-falls-waterfall-water-laos-50588.jpeg)
+![Waterfall](https://static.pexels.com/photos/50588/kuang-si-falls-waterfall-water-laos-50588.jpg)
 > *Kuang Si falls - Pexel bay. Licensed under CC0*
 
 The waterfall approach has its roots in the engineering and construction industries. It has proved to be an effective way of completing large physical infrastructure projects.
@@ -28,14 +28,14 @@ Waterfall's strengths are derived from its roots in construction and engineering
 * Time spent in early phases (planning) saves time and money later
 * It emphasises documentation - knowledge is not in someone’s head
 * Structured approach
-* Clear milestones - when each phase is completed
+* Clear milestones (each phase is a milestone)
 * The client has clear expectations (size, cost, timeline, etc…)
 
 ## Waterfall weaknesses
 
 Waterfall's weaknesses come from its non-iterative approach to designing software (the fact you can't go back to revise work completed in an earlier phase).
 
-* Requirements aren’t always clear at the beginning of a project, so very hard to define
+* Requirements aren’t always clear at the beginning of a project, so very hard to define in early phases
 * Requirements can change based on designs or even final product. Waterfall does not allow for this
 * It is difficult to anticipate technical issues
 
