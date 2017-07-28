@@ -11,7 +11,7 @@ The System Development Life Cycle (SDLC) is about how software systems are and s
 
 SDLC is, therefore, a mixture of sociology (how software is built in practice in the industry) and professional ethics (how software should be built in an ideal world).
 
-Building software is a complex process, so we use the seven phases idenitifed by the [BCS](The UK Chartered Institute for IT) to break this process into small and understandable chunks. See chapter 2.
+Building software is a complex process, so we use the seven phases idenitifed by the [BCS](http://www.bcs.org/) (The UK Chartered Institute for IT) to break this process into small and understandable chunks. See chapter 2.
 
 We will look at two approaches SDLC: Waterfall (chapter 3) and Agile (chapter 4). We will outline the benfits and defeciencies of these approaches. We will also look at Scrum (chapter 5), a detailed implementation of Agile.
 
